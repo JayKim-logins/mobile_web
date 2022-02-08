@@ -1,34 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TIL
 
-## Getting Started
+- public폴더 내부는 url로 접근가능하다
+- <Head> 태그 안에 html 메타 태그들을 넣을수 있다
+- _document.js 파일에서도 html 메타태그들을 설정할 수 있다
+- global.css에 스타일링을 모두 해도되고, 페이지별로 코드분할도 가능하다 
+- css페이지별 분할한다면 `FILE_NAME.module.css` 포맷을 지켜야함
+- getStaticProps vs. getServerSideProps  
+    https://beside-lab.tistory.com/entry/Nextjs-getStaticProps-vs-getServerSideProps-%EC%B0%A8%EC%9D%B4%EC%99%80-%ED%99%9C%EC%9A%A9
+    https://velog.io/@jay/Next.js-API-fetching
+- json()
+    - fetch로 http 요청/응답을 사용할 경우 json()메소드를 통해 Response스트림을 완료될때까지 읽고, body의 텍스트를 Promise형태로 반환한다
+    - Axios의 경우 res.json()이 자동으로 된다
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Errors
+- Error: getStaticPaths was added without a getStaticProps in /article/[id]. Without getStaticProps, getStaticPaths does nothing
+- ReferenceError: window is not defined
