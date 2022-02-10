@@ -1,48 +1,71 @@
-import React from 'react'
-import cookieCutter from 'cookie-cutter'
+import React, { useEffect } from 'react'
+import axios from 'axios';
 
-const login = ({ session }) => {
-    // cookieCutter.set('SESSION', session)
-    console.log('로그인 세션', session)
+const login = () => {
+  
+  const getSession = () => {
+        
+    // const url = 'https://trade.tlogin.net/exclude/doLogin.do'
+    const url = 'api/exclude/doLogin.do'
+  
+    axios.post(url, 
+      {
+        "compCd": "1005",
+        "userId": "damin",
+        "userPw": "damin",
+        "isKeepLogin": false,
+        headers: {
+          'Content-Type': 'application/json', 
+        }
+      },
+      { withCredentials: true }
+    ).then(response => {
+      console.log(response.data);
+    })
+    
+  }
+
+  useEffect(() => {
+    getSession()
+
+  })
+    
   return (
     <div>
-      {session.resultCd}
+      
     </div>
   )
 }
 
 
-export const getStaticProps = async () => {
-    var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNSIsImF1dGgiOiJST0xFX1VTRVIiLCJleHAiOjE2NDIxNDQ0ODB9.gTIbjGXk1VVuPOwhoYD1Vae4pQ9gLAmds2eVkVIqNDgFnbG174vxvI_pPIgt49FbzsSRn89gpTZIQZF9tfx5OA");
-myHeaders.append("Content-Type", "application/json");
-myHeaders.append("Cookie", "SESSION=ZjVhZmE2N2MtOWIzOS00NmY0LTg5ODMtYWU3NGIxZGEwN2M4");
+// export const getStaticProps = async () => {
 
-var raw = JSON.stringify({
-  "compCd": "1005",
-  "userId": "damin",
-  "userPw": "damin",
-  "isKeepLogin": false
-});
+//   var myHeaders = new Headers();
+//   myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNSIsImF1dGgiOiJST0xFX1VTRVIiLCJleHAiOjE2NDIxNDQ0ODB9.gTIbjGXk1VVuPOwhoYD1Vae4pQ9gLAmds2eVkVIqNDgFnbG174vxvI_pPIgt49FbzsSRn89gpTZIQZF9tfx5OA");
+//   myHeaders.append("Content-Type", "application/json");
+//   myHeaders.append("Cookie", "SESSION=ZjVhZmE2N2MtOWIzOS00NmY0LTg5ODMtYWU3NGIxZGEwN2M4");
 
-var requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  body: raw,
-  redirect: 'follow'
-};
+//   var raw = JSON.stringify({
+//     "compCd": "1005",
+//     "userId": "damin",
+//     "userPw": "damin",
+//     "isKeepLogin": false
+//   });
 
-const session = await (await fetch("https://trade.tlogin.net/exclude/doLogin.do", requestOptions)).json()
-console.log(session)
-  
+//   var requestOptions = {
+//     method: 'POST',
+//     headers: myHeaders,
+//     body: raw,
+//     redirect: 'follow'
+//   };
 
-//   const session = await res.json();
-  console.log(session)
-  return {
-    props: {
-        session
-    }
-  }
-}
+//   const session = await (await fetch("https://trade.tlogin.net/exclude/doLogin.do", requestOptions)).json()
+
+//   return {
+//     props: {
+//         session
+//     }
+//   }
+// }
 
 export default login
