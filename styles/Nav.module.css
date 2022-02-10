@@ -1,11 +1,16 @@
 .nav {
-    height: 50px;
+    position: fixed;
+    height: 80px;
+    width: 100%;
     padding: 10px;
-    background: #000;
-    color: #fff;
+    background: rgb(255, 255, 255);
+    font-size: 16px;
+    color: rgb(66, 66, 66);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    z-index: 100;
+    box-shadow: rgb(0 0 0 / 8%) 0px 2px 8px 1px;
 }
 
 .nav ul {
@@ -16,5 +21,16 @@
 }
 
 .nav ul li a {
-    margin: 5px 15px;
+    padding: 5px 20px;
+    /* margin: ; */
+    cursor: pointer;
+}
+
+.nav ul li a:hover {
+    font-weight: bold;
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
 }
