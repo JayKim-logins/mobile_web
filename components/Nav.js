@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <div className={navStyle.nav}>
         <a className={navStyle.logo}>
-            <h2>APP_NAME</h2>
+            <h2>APP_ICON</h2>
         </a>
         <div className={navStyle.nav__menu}>
             <ul>
@@ -14,7 +14,7 @@ const Nav = () => {
                     <Link href='/' >Home</Link>
                 </li>
                 <li>
-                    <Link href='/about' >About</Link>
+                    <Link href='/cards' >Cards</Link>
                 </li>
                 
                 <li>

@@ -6,7 +6,7 @@ const login = () => {
   const getSession = () => {
         
     // const url = 'https://trade.tlogin.net/exclude/doLogin.do'
-    const url = 'api/exclude/doLogin.do'
+    const url = 'login/exclude/doLogin.do'
   
     axios.post(url, 
       {
