@@ -19,23 +19,3 @@ a {
 
 
 
-.App {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #2f74c0;
-  align-items: center;
-  font-family: 'Neucha', cursive; /* cursive :필기체  */
-  /* max-width: 420px; */
-  margin: auto;
-}
-
-.heading {
-  text-transform: uppercase;
-  font-size: 40px;
-  color: white;
-  margin: 25px 0 10px 0;
-  z-index: 1;
-  text-align: center;
-}
