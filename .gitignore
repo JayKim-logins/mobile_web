@@ -33,6 +33,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-/AUIGrid
+/public/AUIGrid
 
 .idea
