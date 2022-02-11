@@ -22,3 +22,14 @@
     서버사이드 렌더링시 브라우저는 인식할수 없기때문에 componentDidMount/useEffect 사이클내에서 작업한다
 - Error: React Hook "useEffect" is called in function "grid" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".
     함수형 컴포넌트명은 대문자로 시작해야 한다
+
+- \> Build error occurred: ReferenceError: window is not defined  
+    https://velog.io/@taese0ng/Next.js-window%EA%B0%9D%EC%B2%B4%EA%B0%80-%EC%97%86%EB%8B%A4%EA%B3%A0%ED%95%A0%EB%95%8C
+    
+- Warning: Do not use <img>. Use Image from 'next/image' instead.
+- External synchronous scripts are forbidden.
+- TypeError: Cannot read properties of undefined (reading 'then')
+    불필요한 import 파일 제거후 사라짐(내경우엔 NoSSRWrapper컴포넌트)
+- 외부 자바스크립트 파일 로드
+    https://velog.io/@conan/js-script
+    https://ichi.pro/ko/reacteseo-oebu-javascript-pail-eul-chugahaneun-4-gaji-bangbeob-143209340483176

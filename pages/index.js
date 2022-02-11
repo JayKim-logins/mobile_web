@@ -3,8 +3,11 @@ import StrengthSection from '../components/StrengthSection'
 import homeStyle from '../styles/Home.module.css'
 import LandingScreenSection from '../components/LandingScreenSection'
 import ServiceSection from '../components/ServiceSection'
+import { useEffect } from 'react'
+import Meta from '../components/Meta'
 
 export default function Home({ articles }) {
+  
   
   
   function scrollToTargetAdjusted(selector){
@@ -14,16 +17,18 @@ export default function Home({ articles }) {
     var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
   
     window.scrollTo({
-         top: offsetPosition,
-         behavior: "smooth"
+          top: offsetPosition,
+          behavior: "smooth"
     });
-}
+  }
+  
 
 
   return (
 
     <main className={homeStyle.wrap}>
       {/* 메타태그 추가 */}
+      <Meta />
       <Head> 
         <title>mobile web</title>
       </Head>

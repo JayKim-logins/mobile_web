@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import axios from 'axios';
 
-const login = () => {
+const Login = () => {
   
   const getSession = () => {
         
@@ -68,4 +68,4 @@ const login = () => {
 //   }
 // }
 
-export default login
+export default Login

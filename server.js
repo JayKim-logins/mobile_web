@@ -6,9 +6,11 @@ const dev = process.env.NODE_ENV === 'development'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
-// port구분
+// --port구분--
 // 로그인: 29000
-// 이외 API게이트웨이: 18080
+// 이외 API게이트웨이: 
+// - 개발: 18080
+// - 운영: 19000
 
 // 코드내 호출: url = 'login/exclude/doLogin.do'
 // 실제호출: url = 'http://210.217.150.160:29000/exclude/doLogin.do'
