@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import InputField from '../components/InputField';
-import gridStyle from '../styles/Grid.module.css';
-import axios from 'axios';
+import gridStyle from '../styles/Grid.module.css'
+import axios from 'axios'
 import Meta from '../components/Meta';
-import '../public/AUIGrid/AUIGridLicense';
 
 
 const Grid = () => {

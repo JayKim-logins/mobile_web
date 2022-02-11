@@ -10,6 +10,8 @@ const Meta = ({ title, keywords, description }) => {
       <link rel='icon' href='/favicon.ico' />
       <title>{title}</title>
       <script src='../AUIGrid/AUIGrid.js' async="async" ></script>
+      <script src='../AUIGrid/AUIGridLicense.js' async="async" ></script>
+      <link href="../AUIGrid/AUIGrid_style.css" rel="stylesheet" type="text/css" />
     </Head>
   )
 }

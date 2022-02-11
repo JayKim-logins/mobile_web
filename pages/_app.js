@@ -1,4 +1,4 @@
-import '../public/AUIGrid/AUIGrid_style.css'
+
 import '../styles/globals.css'
 import Layout from '../components/Layout'
 
