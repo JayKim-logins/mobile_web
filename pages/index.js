@@ -39,10 +39,10 @@ export default function Home({ articles }) {
       </section>
       <ServiceSection />
       <StrengthSection id="a"/>
+      <ServiceSection />
       <StrengthSection id="b"/>
+      <ServiceSection />
       <StrengthSection id="c"/>
-      <StrengthSection id="d"/>
-      <StrengthSection id="e"/>
       
     </main>
   )

@@ -1,0 +1,80 @@
+.wrap {
+    display: flex;
+    padding: 120px 0px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.wrap img {
+    width: 400px;
+    margin: 0px 40px;
+}
+
+.wrap .contents_container {
+    text-align: left;
+}
+
+.wrap .contents_container em {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    font-weight: 400;
+    font-family: "Noto sans KR", sans-serif;
+    color: rgb(117, 117, 117);
+}
+
+.wrap .contents_container h3 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.6px;
+    font-weight: 700;
+    font-family: NanumSquare, sans-serif;
+    color: rgb(84, 130, 214);
+    margin-top: 8px;
+}
+
+.wrap .contents_container p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.6px;
+    font-weight: 400;
+    font-family: "Noto sans KR", sans-serif;
+    color: rgb(97, 97, 97);
+    margin-top: 40px;
+}
+
+.wrap .contents_container p strong {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.6px;
+    font-weight: 400;
+    font-family: "Noto sans KR", sans-serif;
+}
+
+.wrap .contents_container .button {
+    font-weight: bold;
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    font-weight: 400;
+    font-family: "Noto sans KR", sans-serif;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: auto;
+    min-width: 120px;
+    height: 2.5rem;
+    border-radius: 2px;
+    padding: 0px 0px 0px 0.5rem;
+    background-color: transparent;
+    color: rgb(84, 130, 214);
+    border: 1px solid rgb(84, 130, 214);
+}
