@@ -33,6 +33,5 @@ yarn-error.log*
 # vercel
 .vercel
 
-/public/AUIGrid
-
+# IntelliJ
 .idea
