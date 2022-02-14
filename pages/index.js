@@ -3,12 +3,11 @@ import StrengthSection from '../components/StrengthSection'
 import homeStyle from '../styles/Home.module.css'
 import LandingScreenSection from '../components/LandingScreenSection'
 import ServiceSection from '../components/ServiceSection'
+import ServiceSection2 from '../components/ServiceSection2'
 import { useEffect } from 'react'
 import Meta from '../components/Meta'
 
 export default function Home({ articles }) {
-  
-  
   
   function scrollToTargetAdjusted(selector){
     var element = document.querySelector(selector);
@@ -34,14 +33,14 @@ export default function Home({ articles }) {
       </Head>
 
       <LandingScreenSection scrollToTargetAdjusted={scrollToTargetAdjusted} />
-      <section>
-      
-      </section>
       <ServiceSection />
+      <ServiceSection2 />
       <StrengthSection id="a"/>
       <ServiceSection />
+      <ServiceSection2 />
       <StrengthSection id="b"/>
       <ServiceSection />
+      <ServiceSection2 />
       <StrengthSection id="c"/>
       
     </main>

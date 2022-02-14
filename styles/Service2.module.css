@@ -1,0 +1,32 @@
+.wrap {
+    display: flex;
+    padding: 120px 0px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(238, 243, 251);
+}
+
+.wrap h3 {
+    margin: 0px 25px;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.6px;
+    font-weight: 700;
+    font-family: NanumSquare, sans-serif;
+    height: 320px;
+    text-align: center;
+    color: rgb(84, 130, 214);
+}
+
+.wrap .leftImg {
+   height: 80px;
+   margin-top: 160px;
+}
+.wrap .rightImg {
+   height: 227px;
+   margin-top: 96px;
+}
