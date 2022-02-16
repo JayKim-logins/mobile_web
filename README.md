@@ -1,4 +1,4 @@
-# TIL
+# 참고사항
 
 - public폴더 내부는 url로 접근가능하다
 - <Head> 태그 안에 html 메타 태그들을 넣을수 있다
@@ -13,7 +13,7 @@
     - fetch로 http 요청/응답을 사용할 경우 json()메소드를 통해 Response스트림을 완료될때까지 읽고, body의 텍스트를 Promise형태로 반환한다
     - Axios의 경우 res.json()이 자동으로 된다
 
-## Errors
+## 에러처리 내역
 - Error: getStaticPaths was added without a getStaticProps in /article/[id]. Without getStaticProps, getStaticPaths does nothing
     getStaticPaths는 getStaticProps와 함께 있어야 한다
     - getServerSideProps: 상세페이지 방문시마다 api호출
